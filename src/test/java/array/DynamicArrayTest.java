@@ -45,4 +45,14 @@ public class DynamicArrayTest {
         }
     }
 
+    @Test
+    public void sortArray(){
+        int[] a={1,2,3,4,9};
+        int[] b={2,4,8,10};
+        final int[] ints = ArrayStructure.sortArray(a, b);
+        for (int array:ints) {
+            System.out.print(array + " ");
+        }
+    }
+
 }

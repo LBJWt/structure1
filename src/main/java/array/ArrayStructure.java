@@ -73,6 +73,18 @@ public class ArrayStructure {
     }
 
 
+    /**
+     * 实现两个有序数组合并为一个有序数组
+     */
+    static int[] sortArray(int a[],int b[]){
+        int[] newArray = new int[a.length+b.length];
+        System.arraycopy(a,0,newArray,0,a.length);
+        System.arraycopy(b,0,newArray,a.length,b.length);
+        Arrays.sort(newArray);
+        return newArray;
+    }
+
+
 
 
 }
